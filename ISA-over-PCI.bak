@@ -20,7 +20,7 @@
 			)
 		)
 		(property "Value" "ISA Bus over PCI"
-			(at -1.016 35.306 90)
+			(at -0.762 61.468 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30,11 +30,10 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PCBEdge:BUS_PCI"
+		(property "Footprint" "Connector:ISA-over-PCI"
 			(at 0 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -268,8 +267,26 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 22.86 40.64 180)
+				(length 3.81)
+				(name "+5V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A9'"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 22.86 38.1 180)
 				(length 3.81)
 				(name "IO_CH_RDY"
 					(effects
@@ -287,7 +304,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 38.1 180)
+				(at 22.86 35.56 180)
 				(length 3.81)
 				(name "AEN"
 					(effects
@@ -305,7 +322,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 35.56 180)
+				(at 22.86 33.02 180)
 				(length 3.81)
 				(name "SA19"
 					(effects
@@ -323,7 +340,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 33.02 180)
+				(at 22.86 30.48 180)
 				(length 3.81)
 				(name "SA18"
 					(effects
@@ -341,7 +358,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 30.48 180)
+				(at 22.86 27.94 180)
 				(length 3.81)
 				(name "SA17"
 					(effects
@@ -359,7 +376,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 27.94 180)
+				(at 22.86 25.4 180)
 				(length 3.81)
 				(name "SA16"
 					(effects
@@ -377,7 +394,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 25.4 180)
+				(at 22.86 22.86 180)
 				(length 3.81)
 				(name "SA15"
 					(effects
@@ -395,7 +412,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 22.86 180)
+				(at 22.86 20.32 180)
 				(length 3.81)
 				(name "SA14"
 					(effects
@@ -413,7 +430,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 20.32 180)
+				(at 22.86 17.78 180)
 				(length 3.81)
 				(name "SA13"
 					(effects
@@ -431,7 +448,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 17.78 180)
+				(at 22.86 15.24 180)
 				(length 3.81)
 				(name "SA12"
 					(effects
@@ -449,7 +466,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 15.24 180)
+				(at 22.86 12.7 180)
 				(length 3.81)
 				(name "SA11"
 					(effects
@@ -467,7 +484,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 12.7 180)
+				(at 22.86 10.16 180)
 				(length 3.81)
 				(name "SA10"
 					(effects
@@ -477,24 +494,6 @@
 					)
 				)
 				(number "A21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 22.86 10.16 180)
-				(length 3.81)
-				(name "SA9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A22"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -512,7 +511,25 @@
 						)
 					)
 				)
-				(number "A22'"
+				(number "A21'"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 22.86 5.08 180)
+				(length 3.81)
+				(name "SA9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A22"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -521,7 +538,7 @@
 				)
 			)
 			(pin power_in line
-				(at 22.86 5.08 180)
+				(at 22.86 2.54 180)
 				(length 3.81)
 				(name "SA8"
 					(effects
@@ -539,7 +556,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 2.54 180)
+				(at 22.86 0 180)
 				(length 3.81)
 				(name "SA7"
 					(effects
@@ -557,7 +574,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 0 180)
+				(at 22.86 -2.54 180)
 				(length 3.81)
 				(name "SA6"
 					(effects
@@ -575,7 +592,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -2.54 180)
+				(at 22.86 -5.08 180)
 				(length 3.81)
 				(name "SA5"
 					(effects
@@ -593,7 +610,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -5.08 180)
+				(at 22.86 -7.62 180)
 				(length 3.81)
 				(name "SA4"
 					(effects
@@ -611,7 +628,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -7.62 180)
+				(at 22.86 -10.16 180)
 				(length 3.81)
 				(name "SA3"
 					(effects
@@ -629,7 +646,7 @@
 				)
 			)
 			(pin power_in line
-				(at 22.86 -10.16 180)
+				(at 22.86 -12.7 180)
 				(length 3.81)
 				(name "SA2"
 					(effects
@@ -647,7 +664,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -12.7 180)
+				(at 22.86 -15.24 180)
 				(length 3.81)
 				(name "SA1"
 					(effects
@@ -665,7 +682,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -15.24 180)
+				(at 22.86 -17.78 180)
 				(length 3.81)
 				(name "SA0"
 					(effects
@@ -718,7 +735,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -22.86 60.96 0)
 				(length 3.81)
 				(name "RESETDRV"
@@ -754,7 +771,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -22.86 55.88 0)
 				(length 3.81)
 				(name "IRQ9"
@@ -790,7 +807,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -22.86 50.8 0)
 				(length 3.81)
 				(name "DRQ2"
@@ -826,7 +843,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at -22.86 45.72 0)
 				(length 3.81)
 				(name "~{0WS}"
@@ -898,7 +915,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin input line
 				(at -22.86 35.56 0)
 				(length 3.81)
 				(name "~{SMEMR}"
@@ -934,7 +951,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at -22.86 30.48 0)
 				(length 3.81)
 				(name "~{IOR}"
@@ -970,7 +987,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at -22.86 22.86 0)
 				(length 3.81)
 				(name "DRQ3"
@@ -1061,7 +1078,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 7.62 0)
+				(at -22.86 5.08 0)
 				(length 3.81)
 				(name "IRQ7"
 					(effects
@@ -1079,7 +1096,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 5.08 0)
+				(at -22.86 2.54 0)
 				(length 3.81)
 				(name "IRQ6"
 					(effects
@@ -1097,7 +1114,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 2.54 0)
+				(at -22.86 0 0)
 				(length 3.81)
 				(name "IRQ5"
 					(effects
@@ -1114,8 +1131,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -22.86 0 0)
+			(pin bidirectional line
+				(at -22.86 -2.54 0)
 				(length 3.81)
 				(name "IRQ4"
 					(effects
@@ -1133,7 +1150,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -2.54 0)
+				(at -22.86 -5.08 0)
 				(length 3.81)
 				(name "IRQ3"
 					(effects
@@ -1151,7 +1168,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -5.08 0)
+				(at -22.86 -10.16 0)
 				(length 3.81)
 				(name "~{DACK2}"
 					(effects
@@ -1169,7 +1186,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -10.16 0)
+				(at -22.86 -12.7 0)
 				(length 3.81)
 				(name "TC"
 					(effects
@@ -1186,8 +1203,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -22.86 -12.7 0)
+			(pin bidirectional line
+				(at -22.86 -15.24 0)
 				(length 3.81)
 				(name "BALE"
 					(effects
@@ -1204,26 +1221,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin power_in line
 				(at -22.86 27.94 0)
-				(length 3.81)
-				(name "+5V"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B29"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -22.86 -15.24 0)
 				(length 3.81)
 				(name "+5V"
 					(effects
@@ -1258,7 +1257,7 @@
 					)
 				)
 			)
-			(pin bidirectional line
+			(pin power_in line
 				(at -22.86 -22.86 0)
 				(length 3.81)
 				(name "GND"
@@ -1636,7 +1635,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at -22.86 -25.4 0)
 				(length 3.81)
 				(name "~{MEMCS16}"
@@ -1654,7 +1653,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -22.86 -27.94 0)
 				(length 3.81)
 				(name "~{IOCS16}"
@@ -1672,7 +1671,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at -22.86 -30.48 0)
 				(length 3.81)
 				(name "IRQ10"
@@ -1726,7 +1725,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at -22.86 -38.1 0)
 				(length 3.81)
 				(name "IRQ15"
@@ -1762,7 +1761,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at -22.86 -45.72 0)
 				(length 3.81)
 				(name "~{DACK0}"
@@ -1816,7 +1815,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at -22.86 -58.42 0)
 				(length 3.81)
 				(name "DRQ5"
@@ -1870,7 +1869,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin bidirectional line
 				(at -22.86 -66.04 0)
 				(length 3.81)
 				(name "~{DACK7}"
